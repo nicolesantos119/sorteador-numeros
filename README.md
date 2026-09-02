@@ -106,15 +106,6 @@ O HTML já está preparado para chamar duas funções (veja os atributos `onclic
 
 ---
 
-## 🌟 Desafios extras (opcional)
-
-- Impedir números repetidos no mesmo sorteio.
-- Validar se a `quantidade` pedida é possível dentro do intervalo (ex.: pedir 10 números sem repetição entre 1 e 5 não é possível).
-- Exibir os números sorteados em ordem crescente.
-- Adicionar uma pequena animação ao exibir o resultado.
-
----
-
 ## ✅ Entrega
 
 - Faça commit e push das alterações no `app.js` (e nos outros arquivos, se necessário) para o seu repositório.
