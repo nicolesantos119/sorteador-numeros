@@ -47,7 +47,6 @@ resultado.innerHTML =
     `Números sorteados: ${sorteados.join(', ')}` +
     '</label>';
     function sortear() {
-    // código do sorteio...
 
     const botaoReiniciar =
         document.getElementById('btn-reiniciar');
