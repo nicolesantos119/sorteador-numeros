@@ -1,52 +1,53 @@
 const campoQuantidade = document.getElementById('quantidade');
 const campoInicio = document.getElementById('de');
 const campoFim = document.getElementById('ate');
+function sortear() {
 
-const quantidadeTexto = campoQuantidade.value;
-const inicioTexto = campoInicio.value;
-const fimTexto = campoFim.value;
+    const quantidadeTexto = campoQuantidade.value;
+    const inicioTexto = campoInicio.value;
+    const fimTexto = campoFim.value;
 
-if (quantidadeTexto === '' || inicioTexto === '' || fimTexto === '') {
-    alert('Preencha todos os campos.');
-    return;
-}
+    if (quantidadeTexto === '' || inicioTexto === '' || fimTexto === '') {
+        alert('Preencha todos os campos.');
+        return;
+    }
 
-const quantidade = Number(quantidadeTexto);
-const inicio = Number(inicioTexto);
-const fim = Number(fimTexto);
+    const quantidade = Number(quantidadeTexto);
+    const inicio = Number(inicioTexto);
+    const fim = Number(fimTexto);
 
-if (!Number.isInteger(quantidade) || quantidade <= 0) {
-    alert('A quantidade deve ser um número inteiro maior que zero.');
-    return;
-}
+    if (!Number.isInteger(quantidade) || quantidade <= 0) {
+        alert('A quantidade deve ser um número inteiro maior que zero.');
+        return;
+    }
 
-if (!Number.isInteger(inicio) || !Number.isInteger(fim) ||
-    inicio < 1 || fim < 1) {
-    alert('O início e o fim devem ser números inteiros maiores que zero.');
-    return;
-}
+    if (!Number.isInteger(inicio) || !Number.isInteger(fim) ||
+        inicio < 1 || fim < 1) {
+        alert('O início e o fim devem ser números inteiros maiores que zero.');
+        return;
+    }
 
-if (inicio > fim) {
-    alert('O valor inicial não pode ser maior que o valor final.');
-    return;
-}
-const sorteados = [];
+    if (inicio > fim) {
+        alert('O valor inicial não pode ser maior que o valor final.');
+        return;
+    }
+    const sorteados = [];
 
-for (let i = 0; i < quantidade; i++) {
-    const numero = Math.floor(
-        Math.random() * (fim - inicio + 1)
-    ) + inicio;
+    for (let i = 0; i < quantidade; i++) {
+        const numero = Math.floor(
+            Math.random() * (fim - inicio + 1)
+        ) + inicio;
 
-    sorteados.push(numero);
-}
+        sorteados.push(numero);
+    }
 
-const resultado = document.getElementById('resultado');
+    const resultado = document.getElementById('resultado');
 
-resultado.innerHTML =
-    '<label class="texto__paragrafo">' +
-    `Números sorteados: ${sorteados.join(', ')}` +
-    '</label>';
-    function sortear() {
+    resultado.innerHTML =
+        '<label class="texto__paragrafo">' +
+        `Números sorteados: ${sorteados.join(', ')}` +
+        '</label>';
+
 
     const botaoReiniciar =
         document.getElementById('btn-reiniciar');
