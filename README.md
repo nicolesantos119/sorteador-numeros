@@ -109,4 +109,4 @@ O HTML já está preparado para chamar duas funções (veja os atributos `onclic
 ## ✅ Entrega
 
 - Faça commit e push das alterações no `app.js` (e nos outros arquivos, se necessário) para o seu repositório.
-- Confirme que a aplicação funciona corretamente antes de entregar, testando os cenários de sucesso e de erro (campos vazios, intervalo inválido, etc.).
+- Confirme que a aplicação funciona corretamente antes de entregar, testando de sucesso e de erro (campos vazios, intervalo inválido, etc.).
